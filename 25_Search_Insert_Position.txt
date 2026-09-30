@@ -1,0 +1,14 @@
+// Search Insert Position (LC - 35)
+
+Scanner sc = new Scanner(System.in);
+int n = sc.nextInt();
+int[] arr = new int[n];
+for (int i = 0; i < n; i++) {
+    arr[i] = sc.nextInt();
+}
+int target = sc.nextInt();
+int pos = 0;
+while (pos < n && arr[pos] < target) {
+    pos++;
+}
+SOP(pos);

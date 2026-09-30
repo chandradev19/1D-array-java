@@ -1,0 +1,24 @@
+// Ugly Number (LC - 263)
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int[] arr = new int[size];
+        for (int i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
+        }
+        if (isugly(arr[i])) {
+            SOP(arr[i] + " is ugly Num");
+        } else {
+            SOP("not ugly");
+        }
+    }
+
+    public static boolean isugly(int[] arr) {
+        if (arr[i] <= 0) return false;
+        while (arr[i] % 2 == 0)
+    }
+}

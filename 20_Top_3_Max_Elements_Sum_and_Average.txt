@@ -1,0 +1,24 @@
+// Top 3 Max Elements, Sum & Average
+
+Scanner sc = new Scanner(System.in);
+int n = sc.nextInt();
+int[] arr = new int[n];
+for (int i = 0; i < n; i++) {
+    arr[i] = sc.nextInt();
+}
+for (int i = 0; i < n - 1; i++) {
+    for (int j = i + 1; j < n; j++) {
+        if (arr[i] < arr[j]) {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+    }
+}
+int sum = arr[0] + arr[1] + arr[2];
+float avg = sum / 3;
+SOP("1st max: " + arr[0]);
+SOP("2nd max: " + arr[1]);
+SOP("3rd max: " + arr[2]);
+SOP(sum);
+SOP(avg);

@@ -1,0 +1,17 @@
+// Sum Formula & Area of Circle
+
+import java.util.*;
+
+public class Main {
+    PSVM {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        double rad = sc.nextDouble();
+        int Sum = a * a + b * b + c * c + 2 * a * b + 2 * a * b * c;
+        double area = 3.14 * rad * rad;
+        SOP(sum);
+        SOP(area);
+    }
+}
